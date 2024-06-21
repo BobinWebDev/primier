@@ -1,0 +1,690 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #f8f8f8;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+  background-color: #f8f8f8;
+  position: relative;
+  padding-top: 0.1px;
+}
+
+#nav {
+  height: 14vh;
+  width: 100%;
+  margin-top: 2%;
+  border-top: 2px solid #868686;
+  border-bottom: 2px solid #868686;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#nav h1 {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: monument;
+  font-weight: 900;
+  font-size: 2.5rem;
+  letter-spacing: -2px;
+  position: relative;
+}
+
+#nav h1::before {
+  content: "©";
+  position: absolute;
+  right: 6%;
+  top: 29%;
+  font-size: 1.5vw;
+}
+
+#nav h1::after {
+  content: "model management";
+  position: absolute;
+  right: 15%;
+  bottom: 13%;
+  letter-spacing: 1px;
+  font-size: 0.7rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 100;
+}
+
+#nav h2 {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 2px solid black;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+#nav h2:nth-last-child(1) {
+  width: 16%;
+  border-right: none;
+}
+
+#nav h2:nth-last-child(1) i {
+  margin-right: 30%;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+#center {
+  height: 98%;
+  width: 100%;
+  padding: 4vw;
+}
+
+#content {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+#content video {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+#overlay {
+  position: absolute;
+  height: 56%;
+  width: 100%;
+  bottom: 0;
+  padding: 3vw;
+  color: #fff;
+}
+
+#over1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+  padding-bottom: 3%;
+  border-bottom: 2px solid white;
+}
+
+#over1 h1 {
+  font-size: 2.5rem;
+  font-family: monument;
+  font-weight: 500;
+  letter-spacing: 1;
+}
+
+#over2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transform: translateY(-12%);
+}
+
+#over2 img {
+  width: 5vw;
+  height: 10vh;
+}
+
+#scroll {
+  height: 40vh;
+  width: 100%;
+  white-space: nowrap;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+#scroll #container {
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  padding: 2vw;
+  animation-name: anime;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+#scroll img {
+  height: 70%;
+  border-radius: 50%;
+  width: 13%;
+  object-fit: cover;
+  margin-right: 4.2vw;
+  /* display: none; */
+}
+
+#scroll img:nth-last-child(4) {
+  object-position: 60% 20%;
+}
+
+#scroll img:nth-last-child(3) {
+  object-position: 60% 20%;
+}
+
+@keyframes anime {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+#alphabet {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+#alphabet h5 {
+  font-size: 2vw;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-style: italic;
+  border-bottom: 2px solid black;
+  letter-spacing: 0.4vw;
+  margin-right: 3vw;
+  cursor: pointer;
+}
+
+#alphabet h6 {
+  font-size: 1vw;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: 0.4vw;
+  padding: 0.5vw 0.4vw;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all ease 0.2s;
+}
+
+#alphabet h6:hover {
+  border: 1px solid black;
+}
+
+#page2 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vw 5vw;
+}
+
+#page2-part1 {
+  height: 100%;
+  width: 55%;
+  background-image: url(./img/rafaella-mendes-diniz-AoL-mVxprmk-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#page2-part2 {
+  height: 100%;
+  width: 40%;
+}
+
+#page2-part2 img {
+  height: 60vh;
+  width: 32vw;
+  object-fit: cover;
+  object-position: 40% 40%;
+}
+
+#smallheading {
+  height: 8vh;
+  width: 100%;
+  padding: 0 0.3vw;
+}
+
+#smallheading h1 {
+  letter-spacing: 0.2vw;
+  width: 40%;
+  margin-left: 5%;
+}
+
+#page4 {
+  height: 44%;
+  width: 100%;
+  padding: 0vw 4vw;
+}
+
+#page4 img {
+  height: 70%;
+  width: 100%;
+  object-fit: cover;
+  padding: 2vw;
+
+}
+
+#page5 {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  padding: 4vw 5vw;
+  margin-bottom: 6%;
+}
+
+#page5 > h1 {
+  text-align: center;
+  font-family: monument;
+  font-size: 3vw;
+  font-weight: 600;
+  margin-bottom: 13vh;
+}
+
+.elem {
+  height: 17vh;
+  width: 100%;
+  border-top: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2vw;
+  position: relative;
+  transition: all ease 0.7s;
+  cursor: pointer;
+}
+
+.elem:hover {
+  background-color: #e3e3e3;
+}
+
+.elem h4 {
+  font-size: 1.2vw;
+  font-weight: 400;
+}
+
+.elem img {
+  position: absolute;
+  height: 95%;
+  width: 9%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 40% 0%;
+  left: 17%;
+  opacity: 0;
+  transition: all ease 0.7s;
+}
+
+.elem:hover img {
+  opacity: 1;
+  left: 23%;
+}
+
+.elem .content {
+  position: absolute;
+  left: 17%;
+  opacity: 0;
+  transition: all ease 0.9s;
+}
+
+.elem:hover .content {
+  opacity: 1;
+  left: 20%;
+}
+
+.elem:nth-last-child(1) {
+  border-bottom: 2px solid #000;
+}
+
+.elem-part-two {
+  width: 50%;
+}
+
+.elem-part-two h5 {
+  text-transform: uppercase;
+  font-size: 0.9vw;
+  font-weight: 200;
+}
+
+#marque {
+  width: 100%;
+  white-space: nowrap;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  padding: 1vw;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  margin-bottom: 10%;
+}
+
+#marque h1 {
+  animation-name: move;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  display: inline-block;
+  font-size: 4vw;
+  text-transform: uppercase;
+  letter-spacing: 0.5vw;
+  font-weight: 900;
+  font-family: monument;
+  -webkit-text-stroke: 2px black;
+  color: transparent;
+  margin-right: 16px;
+}
+
+@keyframes move {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 20px));
+  }
+}
+
+#footer {
+  height: 10%;
+  width: 100%;
+  border-top: 2px solid #868686;
+  border-bottom: 2px solid #868686;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#space {
+  height: 2vw;
+  width: 100%;
+}
+
+@media (max-width: 500px) {
+  #nav {
+    height: 8vh;
+    width: 100%;
+    margin-top: 2;
+  }
+
+  #nav h1 {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: monument;
+    font-weight: 900;
+    font-size: 1.5rem;
+    letter-spacing: -2px;
+    position: relative;
+  }
+  #nav h1::before {
+    content: "©";
+    position: absolute;
+    right: -12%;
+    top: 29%;
+    font-size: 2vw;
+  }
+  #nav h1::after {
+    content: "model management";
+    position: absolute;
+    right: 15%;
+    bottom: 13%;
+    letter-spacing: 1px;
+    font-size: 0.3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+  }
+
+  #nav h2 {
+    height: 100%;
+    width: 30%;
+    font-size: 1rem;
+    font-weight: 600;
+    display: none;
+  }
+
+  #nav h2:nth-last-child(1) {
+    width: 16%;
+    border-right: none;
+    display: flex;
+  }
+
+  #nav h2:nth-last-child(1) i {
+    margin-right: 30%;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  #center {
+    height: 50%;
+    width: 100%;
+    padding: 7vw;
+  }
+
+  #content {
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+
+  #content video {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+
+  #overlay {
+    position: absolute;
+    height: 56%;
+    width: 100%;
+    bottom: 0;
+    padding: 3vw;
+    color: #fff;
+  }
+
+  #over1 {
+    padding: 1%;
+    padding-bottom: 3%;
+  }
+
+  #over1 h1 {
+    letter-spacing: 1;
+    font-size: 1.3rem;
+  }
+
+  #over2 h1 {
+    letter-spacing: 1;
+    font-size: 1.3rem;
+  }
+
+  #over2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateY(0%);
+  }
+
+  #over2 img {
+    width: 5vw;
+    height: 5vh;
+  }
+
+  #scroll {
+    height: 28vh;
+  }
+  #scroll #container {
+    margin-top: 5vw;
+    margin-right: 3vw;
+  }
+
+  #scroll img {
+    height: 30%;
+    width: 13%;
+  }
+
+  #alphabet {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+
+  #alphabet h5 {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-style: italic;
+    border-bottom: 2px solid black;
+    letter-spacing: 0.4vw;
+    margin-right: 5px;
+
+  }
+
+  #alphabet h6 {
+    font-size: 2.3vw;
+    font-weight: 400;
+    letter-spacing: 0.1vw;
+    padding: 0.5vw 0.1vw;
+  }
+  
+  #page2 {
+    flex-direction: column;
+    padding: 2vw 5vw;
+    gap: 2%;
+  }
+
+  #page2-part1 {
+    height: 100%;
+    width: 80%;
+    background-image: url(./img/rafaella-mendes-diniz-AoL-mVxprmk-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 3vh;
+  }
+
+  #page2-part2 {
+    height: 100%;
+    width: 40%;
+  }
+
+  #page2-part2 img {
+    height: 80%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 40% 40%;
+  }
+
+  
+#smallheading {
+  height: 8vh;
+  width: 100%;
+  padding: 0;
+}
+
+#smallheading h1 {
+  letter-spacing: 0.2vw;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
+
+#page4 {
+  height: 100%;
+  width: 100%;
+  padding: 3vw 5vw;
+}
+#page4 img{
+  height: 60%;
+}
+
+
+#page5 {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  padding: 4vw 5vw;
+  margin-bottom: 6%;
+}
+
+#page5 > h1 {
+  text-align: center;
+  font-family: monument;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 13vh;
+}
+
+.elem {
+  height: 17vh;
+  width: 100%;
+  border-top: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2vw;
+  position: relative;
+  transition: all ease 0.7s;
+  cursor: pointer;
+}
+
+.elem:hover {
+  background-color: #f8f8f8;
+}
+
+.elem h4 {
+  font-size: 12px;
+}
+
+.elem img {
+  height: 95%;
+  width: 20%;
+  opacity: 1;
+}
+
+.elem .content h1{
+   font-size: 20px;
+}
+
+.elem .content h5{
+  font-size: 8px;
+}
+
+.elem .content {
+  opacity: 1;
+}
+
+.elem-part-two {
+  width: 50%;
+}
+.elem-part-two  h1{
+  font-size: 18px;
+}
+
+.elem-part-two h5 {
+  font-size: 9px;
+}
+
+#marque h1{
+  -webkit-text-stroke: 1px black;
+  padding: 12px 0;
+}
+}
